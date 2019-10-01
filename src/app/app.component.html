@@ -1,0 +1,64 @@
+<div class="backgroundLayout {{gradient}}" ></div>
+<!-- <div style=" background-image: url(../assets/todoBackground.svg);" ></div> -->
+<div class="container">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark static-top clearfix">
+        <div class="navbar-brand">
+            <!-- <a class="navbar-brand" href="#">{{title}}</a> -->
+            <button type="button" class=" btn btn-outline-light" style=" pointer-events: none;">{{title}}</button>
+        </div>
+
+
+        <div class="navbar-nav mr-auto">
+
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenu2"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Filter..
+            </button>
+            <div class="dropdown-menu  dropdown-menu-right">
+                <form class="px-4 py-3">
+                    <div class="form-group">
+                        <label for="inputType">Type - {{filter.type}}</label>
+                        <select id="inputType" [(ngModel)]="filter.type" class="form-control" name="inputType">
+                            <option *ngFor="let cat of categories" [value]="cat.name">
+                                {{cat.name}}
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputParticipants">Participants - {{filter.participants}}</label>
+                        <input type="range" class="custom-range" min="1" max="5" value="{{filter.participants}}"
+                            id="inputParticipants" [(ngModel)]="filter.participants" name="inputParticipants">
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary">Apply</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Like our App? Please vote.</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <div>
+        <!-- Page Content -->
+        <div class="container">
+            <div class="row centered">
+                <div class="col-lg-12 text-center">
+                    <div class="text-center  animated {{animation}} delay-3s">
+                        <span class="mt-5 text-white-80 font-weight-light text-center" >{{activity}}</span>
+                    </div>
+                    <img src="../assets/search1.svg" width="200px" alt="Kiwi standing on oval" class="animated fadeInUp delay-1s fadeOutDown delay-1s ">
+                    <img src="../assets/search2.svg" width="200px" alt="Kiwi standing on oval" class="animated fadeOutDown delay-2s">
+                </div>
+            </div>   
+        </div>  
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <h4 class="lead text-white-50 animated fadeIn delay-2s">Press space bar to generate new activity</h4>
+    </div>
+</footer>

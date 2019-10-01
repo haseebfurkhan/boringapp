@@ -1,0 +1,44 @@
+
+.gradient--default {
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
+.gradient--01 {
+    background: linear-gradient(to right, #f54ea2, #ff7676);
+}
+
+.gradient--02 {
+    background: linear-gradient(to right, #17ead9, #6078ea);
+}
+
+.gradient--03 {
+    background: linear-gradient(to right, #622774, #c53364);
+}
+
+.gradient--04 {
+    background: linear-gradient(to right, #7117ea, #ea6060);
+}
+
+.gradient--05 {
+    background: linear-gradient(to right, #f02fc2, #6094ea);
+}
+
+.gradient--06 {
+    background: linear-gradient(to right, #65799b, #5e2563);
+}
+
+.gradient--07 {
+    background: linear-gradient(to right, #184e68, #57ca85);
+}
+
+.gradient--08 {
+    background: linear-gradient(to right, #5b247a, #1bcedf);
+}
+
+.gradient--09 {
+    background: linear-gradient(to right, #fde38a, #f38381);
+}
+
+.gradient--10 {
+    background: linear-gradient(to right, #42de99, #3bb3b7);
+}
