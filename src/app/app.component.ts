@@ -71,7 +71,7 @@ export class AppComponent implements OnInit {
   }
 
   getURL() {
-    let url = 'http://www.boredapi.com/api/activity/';
+    let url = 'https://www.boredapi.com/api/activity/';
 
     if (this.filter.type === 'Random') {
       if (this.filter.participants && Number(this.filter.participants) > 1) {
